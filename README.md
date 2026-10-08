@@ -40,13 +40,13 @@ JSON-LDの構文、禁止表現（「絶対」「モテる」「若返る」「�
 2. `python3 scripts/verify.py --sync` を実行し、HTML側の初期値（JS無効時・検索エンジン向け）も揃える
 3. 料金を変えた場合は `index.html` の構造化データ（JSON-LD）の `price` も手で直す（verify.py が不一致を検出します）
 
-## 公開URLが決まったら
+## 公開
 
-`index.html` 内の `https://TODO-SITE-URL.example/` を実際のURLに一括置換してください（canonical / og:url / og:image / JSON-LD）。
+GitHub Pages（`minteas/minary-lp` の main ブランチ直下）で公開しています。
 
-```bash
-sed -i '' 's#https://TODO-SITE-URL.example/#https://your-domain.example/minary/#g' index.html
-```
+- URL: https://minteas.github.io/minary-lp/
+- `git push` すると数分で反映されます。
+- 公開URLを変える場合は、`index.html`（canonical / og:url / og:image / JSON-LD / シェアURL）・`robots.txt`・`sitemap.xml` 内の `https://minteas.github.io/minary-lp/` を一括置換してください。
 
 ## CTA計測
 

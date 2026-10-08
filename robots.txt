@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://minteas.github.io/minary-lp/sitemap.xml
