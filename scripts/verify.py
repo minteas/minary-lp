@@ -108,9 +108,11 @@ def main():
     js = read(JS_PATH)
     html = read(HTML_PATH)
     line, prices = load_config(js)
+    # main.js と同じく、初回のおトク額は通常価格−初回価格で表示する
+    display_prices = dict(prices, saving=prices["regular"] - prices["trial"])
 
     if "--sync" in sys.argv:
-        new = sync(html, line, prices)
+        new = sync(html, line, display_prices)
         if new != html:
             with open(HTML_PATH, "w", encoding="utf-8") as f:
                 f.write(new)
@@ -126,9 +128,9 @@ def main():
         if href != line:
             errors.append(f"LINEリンクがCONFIGと不一致: {href}（--sync で修正可）")
     for key, text in p.prices:
-        if key not in prices:
+        if key not in display_prices:
             errors.append(f"未定義の data-price: {key}")
-        elif text != yen(prices[key]):
+        elif text != yen(display_prices[key]):
             errors.append(f"価格表示がCONFIGと不一致: {key}={text}（--sync で修正可）")
     if not p.line_links:
         errors.append("data-line のCTAが見つかりません")

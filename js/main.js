@@ -29,9 +29,13 @@
     document.querySelectorAll("a[data-line]").forEach(function (a) {
       a.href = CONFIG.LINE_URL;
     });
+    // saving（初回のおトク額）は通常価格と初回価格から自動計算
+    var prices = Object.assign({}, CONFIG.PRICES, {
+      saving: CONFIG.PRICES.regular - CONFIG.PRICES.trial,
+    });
     document.querySelectorAll("[data-price]").forEach(function (el) {
       var key = el.getAttribute("data-price");
-      if (CONFIG.PRICES[key] != null) el.textContent = formatYen(CONFIG.PRICES[key]);
+      if (prices[key] != null) el.textContent = formatYen(prices[key]);
     });
   }
 
@@ -66,7 +70,7 @@
   // ヒーローのCTAが見えている間・最終CTAが見えている間は固定CTAを隠す
   function wireStickyCta() {
     var sticky = document.getElementById("sticky-cta");
-    var hero = document.querySelector(".hero__actions");
+    var hero = document.querySelector(".hero__offer .btn");
     var final = document.getElementById("final");
     if (!sticky || !hero || !final || !("IntersectionObserver" in window)) {
       if (sticky) setSticky(sticky, true);

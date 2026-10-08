@@ -6,13 +6,12 @@
 <title>安城のメンズ美容｜5つの美容ケアを60分で｜MINARY ミナリー</title>
 <meta name="description" content="ヒゲ脱毛・手の甲脱毛・顔パック・鼻毛ワックス・ホワイトニングを約60分でまとめて。美容ケアを始めたいけれど何をすればいいかわからない男性向けのMINARY（ミナリー）。">
 <meta name="theme-color" content="#0f1417">
-<!-- TODO(SITE_URL): 公開URLが決まったら "https://minteas.github.io/minary-lp/" を一括置換（README参照） -->
 <link rel="canonical" href="https://minteas.github.io/minary-lp/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="MINARY ミナリー">
-<meta property="og:title" content="美容ケアしたいけど何をしたらいいかわからない男性へ｜MINARY ミナリー">
+<meta property="og:title" content="身だしなみは、まとめて60分。｜MINARY ミナリー">
 <meta property="og:description" content="ヒゲ・手・肌・鼻毛・歯。気になる5つを約60分でまとめてケア。初回5,500円（税込）。運営：パーソナルジム ミンティーズ">
 <meta property="og:url" content="https://minteas.github.io/minary-lp/">
 <meta property="og:image" content="https://minteas.github.io/minary-lp/images/ogp.jpg">
@@ -24,20 +23,13 @@
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-<!-- 日本語は端末標準フォント（ヒラギノ等）を使い、英字見出しのみWebフォントを読み込む（軽量化） -->
+<!-- 日本語は端末標準フォント（ヒラギノ等）を使い、英字見出しのみWebフォントを非同期で読み込む（軽量化） -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap"></noscript>
 
-<link rel="preload" as="image" type="image/webp"
-      imagesrcset="images/hero-wide-640.webp 640w, images/hero-wide-960.webp 960w"
-      imagesizes="100vw" media="(max-width: 899px)">
-<link rel="preload" as="image" type="image/webp"
-      imagesrcset="images/hero-portrait-560.webp 560w, images/hero-portrait-880.webp 880w"
-      imagesizes="440px" media="(min-width: 900px)">
-
-<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=8">
 
 <!-- ANALYTICS: GA4 / GTM を導入する場合はこの位置に公式スニペットを追加。
      CTAクリックは js/main.js が dataLayer に { event: "cta_click", cta: "<data-cta値>" } を送信します。 -->
@@ -77,10 +69,14 @@
       "mainEntity": [
         { "@type": "Question", "name": "美容サービスが初めてでも大丈夫ですか？",
           "acceptedAnswer": { "@type": "Answer", "text": "大丈夫です。初めての方にも、何をするのかを分かりやすく説明してから進めます。" } },
-        { "@type": "Question", "name": "全部のケアを受ける必要がありますか？",
-          "acceptedAnswer": { "@type": "Answer", "text": "肌の状態や体調などを確認したうえで、施術内容をご案内します。状態によっては一部のケアを行わない場合もあります。" } },
         { "@type": "Question", "name": "どれくらい時間がかかりますか？",
           "acceptedAnswer": { "@type": "Answer", "text": "5つのケアをまとめて、目安は約60分です。カウンセリングの内容やその日の状態によって前後する場合があります。" } },
+        { "@type": "Question", "name": "全部のケアを受ける必要がありますか？",
+          "acceptedAnswer": { "@type": "Answer", "text": "肌の状態や体調などを確認したうえで、施術内容をご案内します。状態によっては一部のケアを行わない場合もあります。" } },
+        { "@type": "Question", "name": "痛みはありますか？",
+          "acceptedAnswer": { "@type": "Answer", "text": "感じ方には個人差があります。気になる方は、施術前のカウンセリングでお気軽にご相談ください。" } },
+        { "@type": "Question", "name": "どのくらいの頻度で通えばいいですか？",
+          "acceptedAnswer": { "@type": "Answer", "text": "肌や毛の状態によって変わるため、カウンセリングの際にご相談ください。続けたい方向けに、月額のサブスクプランもご用意しています。" } },
         { "@type": "Question", "name": "無理に契約をすすめられませんか？",
           "acceptedAnswer": { "@type": "Answer", "text": "無理な勧誘はありません。お試し後に継続をご希望の方にだけ、サブスクプランをご案内します。" } },
         { "@type": "Question", "name": "サブスクは解約できますか？",
@@ -103,7 +99,9 @@
   <symbol id="i-pack" viewBox="0 0 32 32"><path d="M16 4c-6 0-9.5 4.6-9.5 11S10 28 16 28s9.5-6.5 9.5-13S22 4 16 4z" /><path d="M11.5 14h3M17.5 14h3M13 21c1.8 1.2 4.2 1.2 6 0" /></symbol>
   <symbol id="i-nose" viewBox="0 0 32 32"><path d="M15 5c1.5 4 2 8 1.5 11.5 2.6 1 4.5 2.8 4.5 5 0 2.2-2 3.5-5 3.5s-5-1.3-5-3.5c0-1.4.8-2.6 2-3.4" /><path d="M12.5 24.5h-2M21.5 24.5h-2" /></symbol>
   <symbol id="i-teeth" viewBox="0 0 32 32"><path d="M16 6.5c-3.6-2-9 .2-9 5.4 0 3.4 1.3 5.1 1.6 8.8.3 3.7 1.2 6.3 2.8 6.3 2.3 0 2-6.2 4.6-6.2s2.3 6.2 4.6 6.2c1.6 0 2.5-2.6 2.8-6.3.3-3.7 1.6-5.4 1.6-8.8 0-5.2-5.4-7.4-9-5.4z" /></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></symbol>
+  <symbol id="i-yen" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11" /><path d="M11.5 9.5L16 16l4.5-6.5M16 16v7M12 17h8M12 20.5h8" /></symbol>
+  <symbol id="i-clock" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11" /><path d="M16 9.5V16l4.5 3" /></symbol>
+  <symbol id="i-compass" viewBox="0 0 32 32"><path d="M6 9.5h14M6 16h20M6 22.5h11" /><path d="M21 21l2.5 2.5L28 18" /></symbol>
   <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 3C6.5 3 2 6.6 2 11c0 4 3.6 7.3 8.4 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1 1.5-1.6 2.2-3.3 2.2-4.8C22.5 6.6 17.5 3 12 3zM8.3 13.4H6.2a.5.5 0 0 1-.5-.5V8.8a.5.5 0 0 1 1 0v3.6h1.6a.5.5 0 0 1 0 1zm1.9-.5a.5.5 0 0 1-1 0V8.8a.5.5 0 0 1 1 0zm4.8 0a.5.5 0 0 1-.9.3l-2.1-2.9v2.6a.5.5 0 0 1-1 0V8.8a.5.5 0 0 1 .9-.3l2.1 2.9V8.8a.5.5 0 0 1 1 0zm3.3-2.6a.5.5 0 0 1 0 1h-1.6v1h1.6a.5.5 0 0 1 0 1h-2.1a.5.5 0 0 1-.5-.5V8.8c0-.3.2-.5.5-.5h2.1a.5.5 0 0 1 0 1h-1.6v1z" /></symbol>
 </svg>
 
@@ -125,52 +123,97 @@
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="hero__inner">
       <div class="hero__body">
-        <p class="hero__eyebrow">ミンティーズのメンズ向け美容サービス</p>
+        <p class="hero__eyebrow">ミンティーズのメンズ美容</p>
+        <p class="hero__target">美容ケアしたいけど、<br class="sp-only">何をしたらいいかわからない男性へ。</p>
         <h1 class="hero__title" id="hero-title">
-          <span class="hero__title-sm">美容ケアしたいけど<br>何をしたらいいか<br class="sp-only">わからない男性へ。</span>
+          <span class="hero__catch">身だしなみは、<br>まとめて<em>60</em><span class="hero__unit">分</span>。</span>
           <span class="hero__brand">MINARY<small>ミナリー</small></span>
         </h1>
-        <p class="hero__lead">
-          <span class="hero__parts">ヒゲ・手・肌・鼻毛・歯</span><br>
-          気になる5つを<br class="sp-only">60分でまとめてケア。
-        </p>
+        <ul class="hero__chips" aria-label="MINARYのポイント">
+          <li>5つのケアを1回で</li>
+          <li>1店舗・1予約</li>
+          <li>メニュー選び不要</li>
+        </ul>
+      </div>
 
-        <div class="hero__offer">
-          <p class="hero__badge"><span>60分で</span>全部できる</p>
-          <div class="hero__offer-body">
-          <p class="hero__price">
-            <span class="hero__price-label">初回</span>
-            <span class="hero__price-num"><span data-price="trial">5,500</span><small>円</small></span>
-            <span class="hero__price-tax">（税込）</span>
-          </p>
-          <p class="hero__regular">通常 <s><span data-price="regular">22,000</span>円</s></p>
+      <div class="hero__ring" role="img" aria-label="ヒゲ脱毛・手の甲脱毛・顔パック・鼻毛ワックス脱毛・ホワイトニングの5つを約60分で">
+        <div class="ring">
+          <div class="ring__center">
+            <span class="ring__num">60</span>
+            <span class="ring__min">min</span>
+            <span class="ring__label">5つまとめて</span>
           </div>
-        </div>
-
-        <div class="hero__actions">
-          <a class="btn btn--line btn--lg" href="https://lin.ee/9ySULO8" data-line data-cta="hero-line" target="_blank" rel="noopener">
-            <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">MINARYを<span data-price="trial">5,500</span>円で試してみる</span>
-          </a>
-          <p class="hero__note">LINEで空き状況の確認・予約ができます。<br>無理な勧誘はありません。</p>
+          <span class="ring__item" style="--i:0"><svg aria-hidden="true"><use href="#i-beard" /></svg>ヒゲ脱毛</span>
+          <span class="ring__item" style="--i:1"><svg aria-hidden="true"><use href="#i-hand" /></svg>手の甲脱毛</span>
+          <span class="ring__item" style="--i:2"><svg aria-hidden="true"><use href="#i-pack" /></svg>顔パック</span>
+          <span class="ring__item" style="--i:3"><svg aria-hidden="true"><use href="#i-nose" /></svg>鼻毛ワックス</span>
+          <span class="ring__item" style="--i:4"><svg aria-hidden="true"><use href="#i-teeth" /></svg>ホワイトニング</span>
         </div>
       </div>
 
-      <div class="hero__visual">
-        <picture>
-          <source media="(min-width: 900px)" type="image/webp"
-                  srcset="images/hero-portrait-560.webp 560w, images/hero-portrait-880.webp 880w" sizes="440px">
-          <source media="(min-width: 900px)" srcset="images/hero-portrait-880.jpg">
-          <source type="image/webp" srcset="images/hero-wide-640.webp 640w, images/hero-wide-960.webp 960w" sizes="100vw">
-          <img src="images/hero-wide-960.jpg" width="960" height="600"
-               alt="グレーのタートルネックを着た、すっきりとした印象の男性の横顔" fetchpriority="high" decoding="async">
-        </picture>
-        <p class="hero__visual-caption">※写真はイメージです</p>
+      <div class="hero__offer">
+        <div class="offer">
+          <p class="offer__head">はじめての方限定｜初回お試し</p>
+          <div class="offer__body">
+            <p class="offer__off"><span>75</span>%<br>OFF</p>
+            <div>
+              <p class="offer__regular">通常 <s><span data-price="regular">22,000</span>円</s>（税込）</p>
+              <p class="offer__price"><span data-price="trial">5,500</span><small>円<span class="offer__tax">（税込）</span></small></p>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn--line btn--lg" href="https://lin.ee/9ySULO8" data-line data-cta="hero-line" target="_blank" rel="noopener">
+          <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">LINEで初回<span data-price="trial">5,500</span>円を予約する</span>
+        </a>
+        <p class="hero__note">空き状況の確認だけでもOK。無理な勧誘はありません。</p>
       </div>
     </div>
   </section>
 
-  <!-- 2. WORRIES -->
-  <section class="section section--soft" id="worries" aria-labelledby="worries-title">
+  <!-- 2. FIVE CARES -->
+  <section class="section section--blue" id="cares" aria-labelledby="cares-title">
+    <div class="container">
+      <p class="eyebrow">5 CARES</p>
+      <h2 class="section-title" id="cares-title"><span class="big-num">5</span>つのケアを、<br class="sp-only">1回でぜんぶ。</h2>
+      <ol class="cares">
+        <li class="care reveal">
+          <svg class="care__icon" aria-hidden="true"><use href="#i-beard" /></svg>
+          <p class="care__en">BEARD CARE</p>
+          <h3 class="care__title">ヒゲ脱毛</h3>
+          <p class="care__text">毎朝のヒゲそりや<br>青ひげが気になる方に</p>
+        </li>
+        <li class="care reveal">
+          <svg class="care__icon" aria-hidden="true"><use href="#i-hand" /></svg>
+          <p class="care__en">HAND CARE</p>
+          <h3 class="care__title">手の甲脱毛</h3>
+          <p class="care__text">人から見られやすい<br>手元をすっきりと</p>
+        </li>
+        <li class="care reveal">
+          <svg class="care__icon" aria-hidden="true"><use href="#i-pack" /></svg>
+          <p class="care__en">FACE PACK</p>
+          <h3 class="care__title">顔パック</h3>
+          <p class="care__text">パックで肌をととのえる<br>リラックスタイム</p>
+        </li>
+        <li class="care reveal">
+          <svg class="care__icon" aria-hidden="true"><use href="#i-nose" /></svg>
+          <p class="care__en">NOSE WAX</p>
+          <h3 class="care__title">鼻毛ワックス脱毛</h3>
+          <p class="care__text">自分では難しい鼻毛を<br>ワックスでまとめて</p>
+        </li>
+        <li class="care reveal">
+          <svg class="care__icon" aria-hidden="true"><use href="#i-teeth" /></svg>
+          <p class="care__en">WHITENING</p>
+          <h3 class="care__title">ホワイトニング</h3>
+          <p class="care__text">歯の色が少し気になる<br>という方に</p>
+        </li>
+      </ol>
+      <p class="cares__lead reveal">仕事も忙しい男性のための、<br class="sp-only"><strong>まとめて受けられる身だしなみケア</strong>です。</p>
+      <p class="note note--center">※効果・感じ方には個人差があります。肌状態・体調等により、一部の施術を行えない場合があります。</p>
+    </div>
+  </section>
+
+  <!-- 3. WORRIES -->
+  <section class="section" id="worries" aria-labelledby="worries-title">
     <div class="container container--narrow">
       <p class="eyebrow">CHECK</p>
       <h2 class="section-title" id="worries-title">こんなこと、ありませんか？</h2>
@@ -182,158 +225,150 @@
         <li>美容サロンを何店舗も回るのは面倒</li>
         <li>仕事が忙しく、美容に時間をかけたくない</li>
       </ul>
-      <p class="worries__bridge reveal">ひとつでも当てはまったら、<br class="sp-only">MINARYがちょうどいいかもしれません。</p>
+      <div class="answer reveal">
+        <p class="answer__lead">そのお悩み、</p>
+        <p class="answer__main"><span class="answer__logo">MINARY</span>がまとめて<br class="sp-only">解決します。</p>
+      </div>
     </div>
   </section>
 
-  <!-- 3. ABOUT -->
-  <section class="section about" id="about" aria-labelledby="about-title">
+  <!-- 4. ABOUT + 3 FEATURES -->
+  <section class="section section--dark" id="about" aria-labelledby="about-title">
     <div class="container container--narrow">
-      <p class="eyebrow">ABOUT MINARY</p>
+      <p class="eyebrow eyebrow--light">ABOUT MINARY</p>
       <h2 class="section-title" id="about-title">もう、美容ケアで<br class="sp-only">迷わなくていい。</h2>
       <p class="about__lead reveal">
-        MINARY（ミナリー）は、<br class="sp-only">男性向けの美容ケアサービスです。<br>
-        美容で気になりやすい5つのケアを、<br class="sp-only"><strong>1ヶ所・約60分</strong>でまとめて受けられます。
+        MINARY（ミナリー）は、男性向けの<br class="sp-only">美容ケアサービスです。<br>
+        <strong>1ヶ所・約60分</strong>で、ヒゲ脱毛や<br class="sp-only">ホワイトニングなど<strong>5つのケア</strong>を<br class="sp-only">まとめて受けられます。
       </p>
-      <ul class="about__points reveal" aria-label="MINARYの特徴">
-        <li><span class="about__num">5</span><span class="about__unit">つのケア</span></li>
-        <li><span class="about__num">1</span><span class="about__unit">ヶ所・1予約</span></li>
-        <li><span class="about__num">60</span><span class="about__unit">分が目安</span></li>
-      </ul>
-      <p class="about__sub reveal">メニュー選びはお任せでOK。<br>運営は安城市の<br class="sp-only">パーソナルジム ミンティーズです。</p>
+      <div class="features reveal">
+        <p class="features__title"><span>MINARY</span><em>3</em>つの特徴</p>
+        <ol class="features__list">
+          <li><a href="#feature-cost"><svg aria-hidden="true"><use href="#i-yen" /></svg><span><b>コスパ</b>がいい</span></a></li>
+          <li><a href="#feature-time"><svg aria-hidden="true"><use href="#i-clock" /></svg><span><b>タイパ</b>がいい</span></a></li>
+          <li><a href="#feature-easy"><svg aria-hidden="true"><use href="#i-compass" /></svg><span><b>迷わない</b></span></a></li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <!-- 4. FIVE CARES -->
-  <section class="section section--soft" id="cares" aria-labelledby="cares-title">
-    <div class="container">
-      <p class="eyebrow">5 CARES</p>
-      <h2 class="section-title" id="cares-title">60分で受けられる、<br class="sp-only">5つの美容ケア</h2>
-      <ol class="cares">
-        <li class="care reveal">
-          <svg class="care__icon" aria-hidden="true"><use href="#i-beard" /></svg>
-          <p class="care__en"><span>01</span>BEARD CARE</p>
-          <h3 class="care__title">ヒゲ脱毛</h3>
-          <p class="care__text">毎朝のヒゲそりや、<br>青ひげが気になる方に。</p>
-        </li>
-        <li class="care reveal">
-          <svg class="care__icon" aria-hidden="true"><use href="#i-hand" /></svg>
-          <p class="care__en"><span>02</span>HAND CARE</p>
-          <h3 class="care__title">手の甲脱毛</h3>
-          <p class="care__text">人から見られやすい<br>手元をすっきりと。</p>
-        </li>
-        <li class="care reveal">
-          <svg class="care__icon" aria-hidden="true"><use href="#i-pack" /></svg>
-          <p class="care__en"><span>03</span>FACE PACK</p>
-          <h3 class="care__title">顔パック</h3>
-          <p class="care__text">パックで肌をととのえる<br>リラックスタイム。</p>
-        </li>
-        <li class="care reveal">
-          <svg class="care__icon" aria-hidden="true"><use href="#i-nose" /></svg>
-          <p class="care__en"><span>04</span>NOSE WAX</p>
-          <h3 class="care__title">鼻毛ワックス脱毛</h3>
-          <p class="care__text">自分では難しい鼻毛を<br>ワックスでまとめてケア。</p>
-        </li>
-        <li class="care reveal">
-          <svg class="care__icon" aria-hidden="true"><use href="#i-teeth" /></svg>
-          <p class="care__en"><span>05</span>WHITENING</p>
-          <h3 class="care__title">ホワイトニング</h3>
-          <p class="care__text">歯の色が少し気になる<br>という方に。</p>
-        </li>
-      </ol>
-      <p class="note">※効果・感じ方には個人差があります。<br>※肌状態・体調等により、一部の施術を行えない場合があります。詳細はカウンセリング時にご案内します。</p>
-    </div>
-  </section>
-
-  <!-- 5. REASONS -->
-  <section class="section" id="reasons" aria-labelledby="reasons-title">
-    <div class="container">
-      <p class="eyebrow">WHY MINARY</p>
-      <h2 class="section-title" id="reasons-title">MINARYが選ばれる理由</h2>
-      <ol class="reasons">
-        <li class="reason reveal">
-          <p class="reason__num">01</p>
-          <div>
-            <h3 class="reason__title">60分でまとめてできる</h3>
-            <p class="reason__text">5つのケアを1回の来店で。<br>仕事帰りや休日にも<br class="sp-only">通いやすい長さです。</p>
-          </div>
-        </li>
-        <li class="reason reveal">
-          <p class="reason__num">02</p>
-          <div>
-            <h3 class="reason__title">メニューを自分で<br class="sp-only">選ばなくていい</h3>
-            <p class="reason__text">男性が気になりやすいケアを<br class="sp-only">最初からセットに。<br>何を頼むかで迷いません。</p>
-          </div>
-        </li>
-        <li class="reason reveal">
-          <p class="reason__num">03</p>
-          <div>
-            <h3 class="reason__title">コスパ・タイパがいい</h3>
-            <p class="reason__text">単発だと<span data-price="regular">22,000</span>円のところ、<br class="sp-only">初回は<span data-price="trial">5,500</span>円。<br>お店を回る移動もありません。</p>
-          </div>
-        </li>
-        <li class="reason reveal">
-          <p class="reason__num">04</p>
-          <div>
-            <h3 class="reason__title">美容初心者でも<br class="sp-only">始めやすい</h3>
-            <p class="reason__text">運営は地元のパーソナルジム。<br>サロンが初めての方にも、<br class="sp-only">ひとつずつ説明します。</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- 6. COMPARE -->
-  <section class="section section--soft" id="compare" aria-labelledby="compare-title">
-    <div class="container">
-      <p class="eyebrow">COMPARE</p>
-      <h2 class="section-title" id="compare-title">5つのケアを受けるなら</h2>
-      <div class="compare reveal">
-        <div class="compare__col compare__col--general">
-          <h3 class="compare__head">それぞれのお店で<br class="sp-only">受ける場合</h3>
-          <ol class="compare__flow" aria-label="一般的な通い方の例">
-            <li>脱毛サロン</li>
-            <li>フェイシャル</li>
-            <li>ホワイトニング</li>
-            <li>鼻毛ケア</li>
-          </ol>
-          <ul class="compare__list">
-            <li>お店が複数</li>
-            <li>予約も複数</li>
-            <li>移動の時間がかかる</li>
-            <li>料金をそれぞれ比べる必要がある</li>
-          </ul>
+  <!-- 5-1. COST -->
+  <section class="section feature" id="feature-cost" aria-labelledby="cost-title">
+    <div class="container container--narrow">
+      <p class="feature__num">特徴 <span>01</span></p>
+      <p class="feature__tag">コスパがいい</p>
+      <h2 class="section-title" id="cost-title">別々に受けるより、<br>ぐっと手軽な価格に。</h2>
+      <div class="cost reveal">
+        <div class="cost__row">
+          <p class="cost__label">5つのケアを<br>単発で受けると</p>
+          <div class="cost__bar cost__bar--regular"><span><span data-price="regular">22,000</span>円</span></div>
         </div>
-        <div class="compare__col compare__col--minary">
-          <h3 class="compare__head"><span class="compare__logo">MINARY</span>なら</h3>
-          <div class="compare__one" aria-hidden="true">
-            <svg><use href="#i-beard" /></svg><svg><use href="#i-hand" /></svg><svg><use href="#i-pack" /></svg><svg><use href="#i-nose" /></svg><svg><use href="#i-teeth" /></svg>
+        <div class="cost__row">
+          <p class="cost__label cost__label--minary">MINARY<br>初回お試し</p>
+          <div class="cost__bar cost__bar--minary"><span><span data-price="trial">5,500</span>円</span></div>
+        </div>
+        <p class="cost__result">初回は<strong><span data-price="saving">16,500</span>円</strong>おトク</p>
+        <p class="cost__sub">続けたい方は、サブスク<br class="sp-only">月額<span data-price="subscription">11,000</span>円（税込）</p>
+      </div>
+      <p class="note note--center">※価格はすべて税込。通常価格は5つのケアを単発で受けた場合の料金です。<br>移動や交通費も、1回分で済みます。</p>
+    </div>
+  </section>
+
+  <!-- 5-2. TIME -->
+  <section class="section section--soft feature" id="feature-time" aria-labelledby="time-title">
+    <div class="container">
+      <p class="feature__num">特徴 <span>02</span></p>
+      <p class="feature__tag">タイパがいい</p>
+      <h2 class="section-title" id="time-title">5軒まわるか、<br class="sp-only">1軒で済ませるか。</h2>
+      <div class="timeline reveal">
+        <div class="timeline__col timeline__col--general">
+          <p class="timeline__head">それぞれのお店に<br class="sp-only">通う場合</p>
+          <ol class="timeline__list">
+            <li class="timeline__shop">脱毛サロン</li>
+            <li class="timeline__move">移動・待ち時間</li>
+            <li class="timeline__shop">フェイシャル</li>
+            <li class="timeline__move">移動・待ち時間</li>
+            <li class="timeline__shop">鼻毛ケア</li>
+            <li class="timeline__move">移動・待ち時間</li>
+            <li class="timeline__shop">ホワイトニング</li>
+          </ol>
+          <dl class="timeline__stats">
+            <div><dt>予約</dt><dd>何度も</dd></div>
+            <div><dt>来店</dt><dd>何軒も</dd></div>
+          </dl>
+        </div>
+        <div class="timeline__col timeline__col--minary">
+          <p class="timeline__head"><span class="timeline__logo">MINARY</span>なら</p>
+          <div class="timeline__one">
+            <p class="timeline__one-title">1回の来店で<br>5つまとめて</p>
+            <div class="timeline__icons" aria-hidden="true">
+              <svg><use href="#i-beard" /></svg><svg><use href="#i-hand" /></svg><svg><use href="#i-pack" /></svg><svg><use href="#i-nose" /></svg><svg><use href="#i-teeth" /></svg>
+            </div>
+            <p class="timeline__one-time">約<b>60</b>分で完了</p>
           </div>
-          <ul class="compare__list compare__list--check">
-            <li><strong>1店舗</strong>で完結</li>
-            <li><strong>1回の予約</strong>でOK</li>
-            <li>目安は<strong>約60分</strong></li>
-            <li><strong>5つまとめて</strong>ケア</li>
-          </ul>
+          <p class="timeline__free">浮いた時間は、<br>いつもの予定に。</p>
+          <dl class="timeline__stats timeline__stats--minary">
+            <div><dt>予約</dt><dd>1回</dd></div>
+            <div><dt>来店</dt><dd>1回</dd></div>
+          </dl>
         </div>
       </div>
-      <p class="note note--center">専門店には、専門店ならではの良さがあります。<br>MINARYは「まずは手軽にまとめて」<br class="sp-only">という方向けの選択肢です。</p>
+      <ul class="merits reveal" aria-label="ほかにもうれしいこと">
+        <li>予約の手間が減る</li>
+        <li>スケジュール管理がラク</li>
+        <li>休日をつぶさなくていい</li>
+      </ul>
+      <p class="note note--center">※比較はイメージです。専門店には専門店ならではの良さがあります。</p>
     </div>
   </section>
 
-  <!-- 7. PRICE -->
-  <section class="section" id="price" aria-labelledby="price-title">
+  <!-- 5-3. EASY -->
+  <section class="section feature" id="feature-easy" aria-labelledby="easy-title">
+    <div class="container container--narrow">
+      <p class="feature__num">特徴 <span>03</span></p>
+      <p class="feature__tag">迷わない</p>
+      <h2 class="section-title" id="easy-title">何を選べばいいか、<br>もう悩まない。</h2>
+      <ol class="easy reveal">
+        <li>
+          <p class="easy__num">POINT 1</p>
+          <h3 class="easy__title">メニューは最初からセット</h3>
+          <p class="easy__text">男性が気になりやすい5つを<br class="sp-only">組み合わせ済み。<br>メニュー表とにらめっこは不要です。</p>
+        </li>
+        <li>
+          <p class="easy__num">POINT 2</p>
+          <h3 class="easy__title">カウンセリングでご案内</h3>
+          <p class="easy__text">肌や体調を確認してから、<br class="sp-only">その日の内容をご案内します。</p>
+        </li>
+        <li>
+          <p class="easy__num">POINT 3</p>
+          <h3 class="easy__title">美容が初めてでも大丈夫</h3>
+          <p class="easy__text">運営は地元のパーソナルジム。<br>ひとつずつ説明しながら進めます。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="container container--narrow">
+      <p class="cta-band__text">まずは1回、<br class="sp-only">試してみませんか？</p>
+      <a class="btn btn--line btn--lg" href="https://lin.ee/9ySULO8" data-line data-cta="mid-line" target="_blank" rel="noopener">
+        <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">LINEで初回<span data-price="trial">5,500</span>円を予約する</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 6. PRICE -->
+  <section class="section section--soft" id="price" aria-labelledby="price-title">
     <div class="container">
       <p class="eyebrow">PRICE</p>
-      <h2 class="section-title" id="price-title">料金</h2>
-      <p class="section-lead">まずは1回、<br class="sp-only">お試しから始められます。</p>
+      <h2 class="section-title" id="price-title">MINARYの料金プラン</h2>
 
       <div class="prices">
         <article class="plan plan--trial reveal" aria-labelledby="plan-trial-title">
           <p class="plan__tag">はじめての方</p>
           <h3 class="plan__name" id="plan-trial-title">初回お試しプラン</h3>
           <p class="plan__desc">5つのケアを約60分で</p>
-          <p class="plan__regular">通常 <s><span data-price="regular">22,000</span>円</s></p>
+          <p class="plan__regular">通常 <s><span data-price="regular">22,000</span>円</s> <span class="plan__off">75%OFF</span></p>
           <p class="plan__price"><span data-price="trial">5,500</span><small>円（税込）</small></p>
           <a class="btn btn--line btn--block" href="https://lin.ee/9ySULO8" data-line data-cta="price-trial-line" target="_blank" rel="noopener">
             <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">初回<span data-price="trial">5,500</span>円で予約する</span>
@@ -364,25 +399,23 @@
     </div>
   </section>
 
-  <!-- 8. RECOMMEND -->
-  <section class="section section--dark" id="recommend" aria-labelledby="recommend-title">
-    <div class="container container--narrow">
-      <p class="eyebrow eyebrow--light">FOR YOU</p>
-      <h2 class="section-title" id="recommend-title">こんな男性におすすめです</h2>
-      <ul class="recommend reveal">
-        <li>美容を始めてみたい</li>
-        <li>何をしたらいいか<br>わからない</li>
-        <li>清潔感を高めたい</li>
-        <li>仕事が忙しい</li>
-        <li>美容に時間を<br>かけたくない</li>
-        <li>複数のお店に<br>通うのが面倒</li>
-      </ul>
-      <p class="recommend__note reveal">美容に詳しくなくても大丈夫。<br>「ちょっとやってみようかな」で十分です。</p>
+  <!-- 7. SAFETY -->
+  <section class="section" id="safety" aria-labelledby="safety-title">
+    <div class="container">
+      <p class="eyebrow">SAFETY</p>
+      <h2 class="section-title" id="safety-title">はじめてでも安心の<br class="sp-only"><span class="big-num">5</span>つのポイント</h2>
+      <ol class="safety reveal">
+        <li><span class="safety__num">01</span><h3>無理な勧誘はありません</h3><p>お試しだけで終わってもOKです。</p></li>
+        <li><span class="safety__num">02</span><h3>施術前にカウンセリング</h3><p>何をするのか、先にご説明します。</p></li>
+        <li><span class="safety__num">03</span><h3>肌や体調に合わせてご案内</h3><p>状態によって内容を調整します。</p></li>
+        <li><span class="safety__num">04</span><h3>地元のジムが運営</h3><p>安城市のパーソナルジム ミンティーズが運営しています。</p></li>
+        <li><span class="safety__num">05</span><h3>サブスクは解約OK</h3><p>契約条件は契約前にご確認いただけます。</p></li>
+      </ol>
     </div>
   </section>
 
-  <!-- 9. FLOW -->
-  <section class="section" id="flow" aria-labelledby="flow-title">
+  <!-- 8. FLOW -->
+  <section class="section section--blue" id="flow" aria-labelledby="flow-title">
     <div class="container container--narrow">
       <p class="eyebrow">FLOW</p>
       <h2 class="section-title" id="flow-title">ご利用の流れ</h2>
@@ -402,8 +435,8 @@
     </div>
   </section>
 
-  <!-- 10. FOR PARTNERS -->
-  <section class="section section--blue" id="share" aria-labelledby="share-title">
+  <!-- 9. FOR PARTNERS -->
+  <section class="section" id="share" aria-labelledby="share-title">
     <div class="container container--narrow">
       <p class="eyebrow">FOR PARTNERS</p>
       <h2 class="section-title" id="share-title">旦那さんに、<br class="sp-only">ちょっとすすめてみませんか？</h2>
@@ -427,8 +460,8 @@
     </div>
   </section>
 
-  <!-- 11. FAQ -->
-  <section class="section" id="faq" aria-labelledby="faq-title">
+  <!-- 10. FAQ -->
+  <section class="section section--soft" id="faq" aria-labelledby="faq-title">
     <div class="container container--narrow">
       <p class="eyebrow">FAQ</p>
       <h2 class="section-title" id="faq-title">よくある質問</h2>
@@ -438,12 +471,20 @@
           <p>大丈夫です。初めての方にも、何をするのかを分かりやすく説明してから進めます。</p>
         </details>
         <details class="faq__item">
+          <summary><span class="faq__q">Q</span>どれくらい時間がかかりますか？</summary>
+          <p>5つのケアをまとめて、目安は約60分です。カウンセリングの内容やその日の状態によって前後する場合があります。</p>
+        </details>
+        <details class="faq__item">
           <summary><span class="faq__q">Q</span>全部のケアを受ける必要がありますか？</summary>
           <p>肌の状態や体調などを確認したうえで、施術内容をご案内します。状態によっては一部のケアを行わない場合もあります。</p>
         </details>
         <details class="faq__item">
-          <summary><span class="faq__q">Q</span>どれくらい時間がかかりますか？</summary>
-          <p>5つのケアをまとめて、目安は約60分です。カウンセリングの内容やその日の状態によって前後する場合があります。</p>
+          <summary><span class="faq__q">Q</span>痛みはありますか？</summary>
+          <p>感じ方には個人差があります。気になる方は、施術前のカウンセリングでお気軽にご相談ください。</p>
+        </details>
+        <details class="faq__item">
+          <summary><span class="faq__q">Q</span>どのくらいの頻度で通えばいいですか？</summary>
+          <p>肌や毛の状態によって変わるため、カウンセリングの際にご相談ください。続けたい方向けに、月額のサブスクプランもご用意しています。</p>
         </details>
         <details class="faq__item">
           <summary><span class="faq__q">Q</span>男性スタッフですか？</summary>
@@ -459,6 +500,11 @@
           <p>解約できます。解約を希望される場合は、解約希望月の前々月末日までに所定の方法で申請してください。契約条件は、契約前に必ずご確認ください。</p>
         </details>
         <details class="faq__item">
+          <summary><span class="faq__q">Q</span>キャンセルや日時の変更はできますか？</summary>
+          <!-- TODO(CANCEL): キャンセル規定（期限・キャンセル料の有無）が決まったら追記 -->
+          <p>ご予約の変更・キャンセルは、公式LINEからご連絡ください。</p>
+        </details>
+        <details class="faq__item">
           <summary><span class="faq__q">Q</span>予約はどうすればいいですか？</summary>
           <p>公式LINEからご予約いただけます。空き状況の確認やご質問もLINEで受け付けています。</p>
         </details>
@@ -467,7 +513,7 @@
   </section>
 
   <!-- サービス概要（AI検索・検索エンジン向けにテキストで明記） -->
-  <section class="section section--soft section--tight" id="overview" aria-labelledby="overview-title">
+  <section class="section section--tight" id="overview" aria-labelledby="overview-title">
     <div class="container container--narrow">
       <h2 class="overview__title" id="overview-title">MINARYのサービス概要</h2>
       <dl class="overview">
@@ -484,14 +530,17 @@
     </div>
   </section>
 
-  <!-- 12. FINAL CTA -->
+  <!-- 11. FINAL CTA -->
   <section class="final" id="final" aria-labelledby="final-title">
     <div class="container container--narrow">
       <p class="eyebrow eyebrow--light">START</p>
       <h2 class="final__title" id="final-title">美容を、<br class="sp-only">難しく考えなくていい。</h2>
       <p class="final__lead">まずは60分、試してみませんか？</p>
-      <p class="final__price">初回 <span data-price="trial">5,500</span><small>円（税込）</small></p>
-      <a class="btn btn--line btn--lg btn--on-dark" href="https://lin.ee/9ySULO8" data-line data-cta="footer-line" target="_blank" rel="noopener">
+      <div class="final__offer">
+        <p class="final__regular">通常 <s><span data-price="regular">22,000</span>円</s></p>
+        <p class="final__price">初回 <span data-price="trial">5,500</span><small>円（税込）</small></p>
+      </div>
+      <a class="btn btn--line btn--lg" href="https://lin.ee/9ySULO8" data-line data-cta="footer-line" target="_blank" rel="noopener">
         <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">LINEでMINARYを予約する</span>
       </a>
       <p class="final__note">LINEで空き状況の確認だけでもOK。<br>無理な勧誘はありません。</p>
@@ -511,10 +560,10 @@
 <!-- スマホ用 下部固定CTA -->
 <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
   <a class="btn btn--line btn--block" href="https://lin.ee/9ySULO8" data-line data-cta="sticky-line" target="_blank" rel="noopener" tabindex="-1">
-    <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">初回<span data-price="trial">5,500</span>円で試す</span>
+    <svg class="btn__icon" aria-hidden="true"><use href="#i-line" /></svg><span class="btn__label">初回<span data-price="trial">5,500</span>円で予約する</span>
   </a>
 </div>
 
-<script src="js/main.js?v=3" defer></script>
+<script src="js/main.js?v=4" defer></script>
 </body>
 </html>
