@@ -13,8 +13,7 @@
    * 変更後は `python3 scripts/verify.py --sync` を実行してHTMLも揃えてください。
    * ------------------------------------------------------------------- */
   var CONFIG = {
-    // TODO(LINE_URL): 現在はミンティーズ公式LINE。MINARY専用アカウントができたら差し替え
-    LINE_URL: "https://line.me/ti/p/@luy1644d",
+    LINE_URL: "https://lin.ee/9ySULO8", // MINARY 問い合わせ先LINE
     PRICES: {
       regular: 22000, // 通常価格（5つのケアを単発で受けた場合・税込）
       trial: 5500, // 初回お試し（税込）
